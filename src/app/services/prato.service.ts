@@ -27,8 +27,11 @@ postPrato(value: Prato){
 }
 
 putPrato(value: Prato){
-  this.http.put(this.serviceURL, value)
-   .subscribe(data => console.log(data));
+  this.http.put(this.serviceURL+"/"+value.pratoId, value)
+   .subscribe(data => {
+    this.router.navigate(["/pratos"]);
+    console.log(data);
+   } );
 }
 
 deletePrato(id){

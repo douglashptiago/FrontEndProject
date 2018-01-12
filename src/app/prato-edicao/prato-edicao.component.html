@@ -1,0 +1,38 @@
+<div class="container">
+  <h1>Editar Prato</h1>
+  <div class="row">
+      <div class="col-sm-6">
+
+  <div class="form-group">
+      <label for="sel1">Restaurante:</label>
+      <select class="form-control" id="sel1" [(ngModel)]="selectedItem">
+        <option *ngFor="let restaurante of restaurantes" [ngValue]="restaurante">{{restaurante.nomeRestaurante}}</option>
+      </select>
+    </div>
+    </div>
+    </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="form-group">
+        <label for="usr">Prato:</label>
+        <input type="text" class="form-control" id="nomePrato" [(ngModel)]="prato.nomePrato">
+      </div>
+    </div>
+    <div class="col-sm-2">
+        <div class="form-group">
+          <label for="usr">Preço:</label>
+          <input type="number" class="form-control" id="prato" [(ngModel)]="prato.preco">
+        </div>
+      </div>
+  </div>
+   
+  <div class="row">
+    <div class="col-sm-1">
+      <button type="button" class="btn btn-danger" (click)="btnCancelarClick();">Cancelar</button>
+    </div>
+    <div class="col-sm-1">
+      <button type="button" class="btn btn-success" (click)="btnSalvarClick();">Salvar</button>
+    </div>
+  </div> 
+</div>

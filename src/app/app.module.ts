@@ -14,6 +14,8 @@ import { RestauranteService } from './services/restaurante.service';
 import { PratoService } from './services/prato.service';
 import { MatTableModule } from '@angular/material';
 import { FormsModule } from '@angular/forms';
+import { RestauranteEdicaoComponent } from './restaurante-edicao/restaurante-edicao.component';
+import { PratoEdicaoComponent } from './prato-edicao/prato-edicao.component';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { FormsModule } from '@angular/forms';
     RestauranteComponent,
     PratoComponent,
     PratoCadastroComponent,
-    RestauranteCadastroComponent
+    RestauranteCadastroComponent,
+    RestauranteEdicaoComponent,
+    PratoEdicaoComponent
   ],
   imports: [
     BrowserModule,

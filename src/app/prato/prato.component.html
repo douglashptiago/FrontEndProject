@@ -11,11 +11,11 @@
               <mat-table [dataSource]="dataSource">
                   <ng-container matColumnDef="editar">
                     <mat-header-cell *matHeaderCellDef> </mat-header-cell>
-                    <mat-cell *matCellDef="let editar"><a>editar</a> </mat-cell>
+                    <mat-cell *matCellDef="let data"><a (click)="OnEditarClick(data);">editar</a> </mat-cell>
                   </ng-container>
                   <ng-container matColumnDef="excluir">
                     <mat-header-cell *matHeaderCellDef> </mat-header-cell>
-                    <mat-cell *matCellDef="let excluir"><a>excluir</a></mat-cell>
+                    <mat-cell *matCellDef="let data"><a (click)="OnExcluirClick(data);">excluir</a></mat-cell>
                   </ng-container>
                   <ng-container matColumnDef="restauranteId">
                       <mat-header-cell *matHeaderCellDef> Restaurante </mat-header-cell>

@@ -4,7 +4,7 @@
     <div class="col-sm-6">
       <div class="form-group">
         <label for="usr">Nome:</label>
-        <input type="text" class="form-control" id="usr">
+        <input type="text" class="form-control" [(ngModel)]="filter" id="usr">
       </div>
     </div>
   </div>
@@ -26,7 +26,7 @@
             </ng-container>
             <ng-container matColumnDef="excluir">
               <mat-header-cell *matHeaderCellDef> </mat-header-cell>
-              <mat-cell *matCellDef="let restaurante"><a>excluir</a></mat-cell>
+              <mat-cell *matCellDef="let restaurante"><a (click)="OnExcluirClick(restaurante);">excluir</a></mat-cell>
             </ng-container>
             <ng-container matColumnDef="restaurante">
               <mat-header-cell *matHeaderCellDef> Restaurante </mat-header-cell>

@@ -1,7 +1,6 @@
-import { Restaurante } from './restaurante';
 export interface Prato{
     pratoId: number;
     nomePrato: string;
-    preco: any;
+    preco: number;
     restauranteId: number;
 }

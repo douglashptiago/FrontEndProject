@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>Editar Restaurante</h1>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="form-group">
+        <label for="usr">Nome do Restaurante:</label>
+        <input type="text" class="form-control" [(ngModel)]="restaurante.nomeRestaurante" id="mytexto">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-1">
+      <button type="button" class="btn btn-danger" (click)="btnCancelarClick();">Cancelar</button>
+    </div>
+    <div class="col-sm-1">
+      <button type="button" class="btn btn-success" (click)="btnSalvarClick();">Salvar</button>
+    </div>
+  </div>  
+</div>

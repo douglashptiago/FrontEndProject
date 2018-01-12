@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 @Injectable()
 export class RestauranteService {
 
+  restaurante: Restaurante;
   private serviceURL = 'http://localhost:59207/api/Restaurante';
 
   constructor(private http: HttpClient, private router:Router) { }
@@ -27,12 +28,10 @@ export class RestauranteService {
   }
 
   putRestaurante(value: Restaurante){
-    this.http.put(this.serviceURL, value)
-     .subscribe(data => console.log(data));
-  }
-
-  deleteRestaurante(id){
-    this.http.delete(this.serviceURL+"/"+id)
-    .subscribe(data => console.log(data));
+    this.http.put(this.serviceURL+"/"+value.restauranteId, value)
+     .subscribe(data => {
+         this.router.navigate(["/restaurantes"]);
+        }
+      );
   }
 }
