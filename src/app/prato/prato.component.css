@@ -1,0 +1,15 @@
+.mat-column-editar {
+    max-width: 5%;
+   }
+.mat-column-excluir {
+    max-width: 5%;
+    }
+.mat-column-restauranteId {
+    max-width: 10%;
+    }
+.mat-column-prato {
+    max-width: 40%;
+    }
+.mat-column-preco {
+    max-width: 40%;
+}

@@ -1,0 +1,18 @@
+.content{
+    padding: 0;
+}
+
+.content h5{
+    font-size: 20px;
+}
+
+.mat-column-editar {
+    max-width: 5%;
+   }
+.mat-column-excluir {
+    max-width: 5%;
+    }
+.mat-column-restaurante {
+    max-width: 90%;
+    }
+   
